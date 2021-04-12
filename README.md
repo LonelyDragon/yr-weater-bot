@@ -1,0 +1,1 @@
+Wheather bot for yr.no site
