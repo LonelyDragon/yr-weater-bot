@@ -1,3 +1,7 @@
 /.vscode/*
 Pipfile
 .env
+/apps/bot_handlers/__pycache__/
+/apps/bot_handlers/migrations/
+/yrbot/__pycache__/
+db.sqlite3
