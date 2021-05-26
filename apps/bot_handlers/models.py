@@ -9,7 +9,6 @@ class Users(models.Model):
         unique=True, editable=False,
         help_text="unique id user")
     user_id_telegram = models.IntegerField(
-        max_length=25,
         help_text="user's telegram unique id")
     username = models.CharField(
         max_length=255, editable=False,
@@ -31,13 +30,13 @@ class UserSettings(models.Model):
     user_id = models.ForeignKey(
         Users, on_delete=models.CASCADE)    
     lat = models.FloatField(
-        max_lenght=20, help_text="latitude",
+        max_length=20, help_text="latitude",
         blank=False)
     lon = models.FloatField(
-        max_lenght=20, help_text="longitude",
+        max_length=20, help_text="longitude",
         blank=False)
     altitude = models.IntegerField(
-        max_length=6, help_text="Whole meters above sea level",
+        help_text="Whole meters above sea level",
         blank=True
     )
     time_send = models.TimeField(
