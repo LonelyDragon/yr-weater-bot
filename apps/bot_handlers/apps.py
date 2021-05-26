@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class BotHandlersConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'bot_handlers'
+    name = 'apps.bot_handlers'
