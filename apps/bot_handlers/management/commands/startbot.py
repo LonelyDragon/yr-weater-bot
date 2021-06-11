@@ -20,8 +20,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         
-        #API_TOKEN = str(os.getenv('BOT_KEY'))
-        API_TOKEN = "1682438195:AAERPpit2Ny4BGMRF6IZBc2B5m5Gbmonq68"
+        API_TOKEN = str(os.getenv('BOT_TOKEN'))
         # Initialize bot and dispatcher
         bot = Bot(token=API_TOKEN)
         dp = Dispatcher(bot, storage=MemoryStorage())
